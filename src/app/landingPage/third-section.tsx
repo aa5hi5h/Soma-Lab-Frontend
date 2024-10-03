@@ -63,7 +63,7 @@ const ThirdSection = () => {
           <div className="flex gap-6">
             <div className="w-full">
               <div className="text-[#111019] pt-4 pl-4 font-medium leading-normal md:text-3xl text-2xl">
-              Despite high demand for healthcare professionals, there's a persistent shortage. This isn't due to a lack of interest or low pay, but because of limited clinical training positions.
+              Despite high demand for healthcare professionals, there&apso;s a persistent shortage. This isn&apos;t due to a lack of interest or low pay, but because of limited clinical training positions.
               </div>
             </div>
             </div>
