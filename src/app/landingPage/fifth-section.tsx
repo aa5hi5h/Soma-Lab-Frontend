@@ -5,7 +5,6 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import AnimatedBox from "../../../public/Animated Box.webp"
-import MEdical from "../../../public/MEdicine Bin.svg"
 const FifthSection = () => {
 
     const router = useRouter()

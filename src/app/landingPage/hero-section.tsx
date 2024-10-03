@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Mail, Search } from "lucide-react"
-import Link from "next/link"
+import { Mail } from "lucide-react"
 import YCLogo from "../../../public/YCLogo.png"
 import Image from "next/image"
 import LogoSlider from "@/components/slider"

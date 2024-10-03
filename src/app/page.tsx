@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar/page";
-import Image from "next/image";
 import HeroSection from "./landingPage/hero-section";
 import SecondSection from "./landingPage/Second-section";
 import ThirdSection from "./landingPage/third-section";

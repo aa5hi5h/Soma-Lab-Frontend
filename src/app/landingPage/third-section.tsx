@@ -2,8 +2,6 @@ import Image from "next/image"
 
 import MedicalPng from "../../../public/undraw_medical_research_qg4d.svg"
 import MedicalPng2 from "../../../public/undraw_doctors_p6aq.svg"
-import { Button } from "@/components/ui/button"
-import { CheckCircle2, MousePointerSquareDashed } from "lucide-react"
 import MedicalPng3 from "../../../public/Medicine Heart.svg"
 import MedicalPng4 from "../../../public/MEdicine Bin.svg"
 const ThirdSection = () => {

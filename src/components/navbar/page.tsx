@@ -1,5 +1,5 @@
 "use client"
-import { Blend, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import Logo from "../Logo"
 import { Button } from "../ui/button"
 import { useRouter } from "next/navigation"
