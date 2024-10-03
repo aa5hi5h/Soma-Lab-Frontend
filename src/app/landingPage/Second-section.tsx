@@ -8,14 +8,14 @@ import HeroImage from "../../../public/Animated SS.png";
 const SecondSection: React.FC = () => {
   const { scrollYProgress } = useScroll();
   
-  const simulationX = useTransform(scrollYProgress, [0, 0.2, 0.6], ['-100%', '-50%', '0%']);
-  const medicineX = useTransform(scrollYProgress, [0.6, 0.8, 1], ['100%', '50%', '0%']);
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.1, 1, 1.2]);
+  const simulationX = useTransform(scrollYProgress, [0, 0.05, 0.1], ['-100%', '-50%', '0%']);
+  const medicineX = useTransform(scrollYProgress, [0.1, 0.11, 0.13], ['100%', '50%', '0%']);
+  const imageScale = useTransform(scrollYProgress, [0, 0.1, 0.11,0.13], [0.1, 0.5, 0.75,1 ]);
 
   return (
     <div className="py-16">
       <div className="text-[#2b1c50] px-6 md:w-3/5 mx-auto text-center flex justify-center items-center text-xl font-bold mb-16">
-        We're founders and researchers from some of the most prestigious medical institutions in the world
+        We&apos;re founders and researchers from some of the most prestigious medical institutions in the world
       </div>
       <div className="h-[150vh] mt-[-10rem] relative overflow-hidden">
         <div className="sticky top-0 h-screen flex flex-col items-center justify-between py-16">

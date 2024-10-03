@@ -27,7 +27,7 @@ const Footer = () => {
                         © {currentYear} SomaLab.ai. All rights reserved.
                     </div>
                     <div className="text-lg font-medium mt-4 text-center">
-                    Built by - <span onClick={()  => router.push("https://x.com/de6a5hi5h")}  className="text-blue-500 underline underline-offset-4 cursor-pointer">@Deba5hi5h</span>, <span className="text-[#2EA44F] cursor-pointer">Github</span>
+                    Built by - <span onClick={()  => router.push("https://x.com/de6a5hi5h")}  className="text-blue-500 underline underline-offset-4 cursor-pointer">@Deba5hi5h</span>, <span onClick={() => router.push("https://github.com/aa5hi5h/Soma-Lab-Frontend")} className="text-[#2EA44F] cursor-pointer">Github</span>
                 </div>
         </div>
     )

@@ -1,23 +1,83 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { CircleArrowRight, ExternalLink } from "lucide-react"
 import HeroImage from "../../../public/Dashboard Soma Lab.png"
 import Image from "next/image"
-
+import { useRouter } from "next/navigation"
+import {motion } from "framer-motion"
+import AnimatedCone from "../../../public/Animated Cone.webp"
+import AnimatedDonut from "../../../public/Animated Donut.webp"
 
 const SixthSection = () => {
+
+    const router = useRouter()
+
+    const circularMotion = {
+        animate: {
+          x: ["0%", "50%", "0%", "-50%", "0%"],
+          y: ["-50%", "0%", "50%", "0%", "-50%"],
+        },
+        transition: {
+          duration: 35,
+          ease: "linear",
+          repeat: Infinity,
+        },
+      }
+
+      
+  const Rotation = {
+    animate: {
+        rotate: [0, 360],
+      },
+      transition: {
+        duration: 40,
+        repeat: Infinity,
+        ease: "linear"
+      },
+    };
+
+
 
     return (
         <div className="flex flex-col space-y-8  pt-8 items-center justify-center">
       <div className="md:w-5/6 md:rounded-[80px] bg-[#111019] items-center justify-center flex">
-        <div className="md:py-40 py-20 flex flex-col">
+      <div className="relative flex flex-col items-center justify-center py-20">
           <div className="flex text-white flex-col justify-center items-center space-y-10">
             <div className="text-4xl px-8 md:px-0 md:text-8xl md:w-2/3 md:mx-auto text-center">
-            Let's create more healthcare jobs.
+            Let&apos;s create more healthcare jobs.
             </div>
-            <Button className="w-48 bg-[#565add] hover:bg-[#565add]/75">Book a Demo</Button>
+            <Button onClick={() => router.push("/contact") } className="w-48 bg-[#565add] hover:bg-[#565add]/75">Book a Demo</Button>
           </div>
 
-          <Image className=" w-2/3 mt-20 rounded-[40px] mx-auto shadow-indigo-400 shadow-2xl "
+          <motion.div
+        className="absolute z-10 left-[8%] top-[35%] w-1/4"
+        animate={Rotation.animate}
+        transition={Rotation.transition}
+      >
+        <Image
+          src={AnimatedCone}
+          alt="Left animated image"
+          width={200}
+          height={200}
+          className="w-32 h-32 md:w-52 md:h-52"
+        />
+      </motion.div>
+
+      <motion.div
+        className="absolute z-10 right-[8%] top-[35%] w-1/4"
+        animate={circularMotion.animate}
+        transition={circularMotion.transition}
+      >
+        <Image
+          src={AnimatedDonut}
+          alt="Right animated image"
+          width={200}
+          height={200}
+          className="w-32 h-32 md:w-60 md:h-60"
+        />
+      </motion.div>
+
+          <Image className=" w-2/3 mt-20 z-20 rounded-[40px] mx-auto shadow-indigo-400 shadow-2xl "
           src={HeroImage}
           alt="Image"
           />

@@ -1,8 +1,14 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-
-
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { motion } from "framer-motion"
+import AnimatedBox from "../../../public/Animated Box.webp"
+import MEdical from "../../../public/MEdicine Bin.svg"
 const FifthSection = () => {
+
+    const router = useRouter()
 
     return (
         <div className=" mt-[-8rem] pb-16 items-center justify-center flex">
@@ -15,7 +21,7 @@ const FifthSection = () => {
                 CME, Pharma, and Device Training
                 </div>
                 <div className="text-center md:w-3/4 px-4 md:px-0 md:text-xl py-4">
-                Continuing Medical Education (CME) keeps practicing doctors updated with the latest medical advancements. CME often relies on outdated methods, like brief videos, which aren't effective for deep learning.
+                Continuing Medical Education (CME) keeps practicing doctors updated with the latest medical advancements. CME often relies on outdated methods, like brief videos, which aren&apos;t effective for deep learning.
                 </div>
 
                 <div
@@ -29,22 +35,42 @@ We offer interactive, case-based learning modules that provide practical, engagi
 ‍
 Experience different patient profiles and conditions to understand treatment impacts.
                  </div>
-                 <Button className="bg-[#565add] hover:bg-[#565add]/75 mx-auto mt-[1rem] md:mt-[2rem] flex gap-2">
+                 <Button onClick={() => router.push("/contact") } className="bg-[#565add] hover:bg-[#565add]/75 mx-auto mt-[1rem] md:mt-[2rem] flex gap-2">
                     Book Demo
                     <ArrowRight className="w-6 h-6" />
                     </Button>
 
                 </div>
-                  <div
-                    className="md:mx-auto mx-8 py-[5rem] bg-[#9f92ec] rounded-[40px] md:rounded-[60px] space-y-10 items-center justify-center flex flex-col">
-                    <div className="text-4xl  md:w-[480px]  text-center">
-                    Pharma and Device Training
-                    </div>
+                <div className="md:mx-auto mx-8 py-[5rem] bg-[#9f92ec] rounded-[40px] md:rounded-[60px] space-y-10 items-center justify-center flex flex-col relative">
+                                        <div className="text-4xl md:w-[480px] text-center">
+                                            Pharma and Device Training
+                                        </div>
 
-                    <p className="items-center text-center flex md:pb-[8rem] justify-center">
-                    Explore how the drug works for different patient demographics.
-                    </p>
-                  </div>
+                                        <p className="items-center text-center flex md:pb-[8rem] justify-center">
+                                            Explore how the drug works for different patient demographics.
+                                        </p>
+
+                                        <motion.div
+                        className="absolute bottom-[-100px] left-0 transform -translate-x-1/2"
+                        animate={{
+                            x: ["0%", "50%", "0%", "-50%", "0%"],
+                            y: ["-50%", "0%", "50%", "0%", "-50%"],
+                        }}
+                        transition={{
+                            duration: 35,
+                            ease: "linear",
+                            repeat: Infinity,
+                        }}
+                    >
+                                            <Image
+                                                src={AnimatedBox}
+                                                alt="Rotating Image"
+                                                width={200}
+                                                height={200}
+                                                className="w-32 h-32 md:w-48 md:h-48"
+                                            />
+                                        </motion.div>
+                                    </div>
                 </div>
               </div>
             </div>
