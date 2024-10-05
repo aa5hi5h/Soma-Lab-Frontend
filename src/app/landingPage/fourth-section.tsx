@@ -50,7 +50,7 @@ Interact with patients experiencing different emotional states, such as anxiety,
                 "
                 />
 
-                <div className="text-2xl items-center justify-center flex pt-10 text-[#224229] font-semibold ">
+                <div className="text-2xl items-center text-center justify-center flex pt-10 text-[#224229] font-semibold ">
                 Physical Procedures         
 
                 </div>
@@ -72,7 +72,7 @@ Learn to perform targeted physical exams based on patient symptoms, such as card
                 "
                 />
 
-                <div className="text-2xl items-center justify-center font-semibold flex pt-10 text-[#450f3a]">
+                <div className="text-2xl items-center text-center justify-center font-semibold flex pt-10 text-[#450f3a]">
                 Differential Diagnosis Building
 
                 </div>
@@ -93,7 +93,7 @@ Learn to perform targeted physical exams based on patient symptoms, such as card
                 </div>
             </div>
             <div className="bg-[#eff0ff] rounded-[40px] md:w-3/5 md:h-[520px] overflow-hidden p-10 hover:scale-105 hover:shadow-xl">
-                <div className="text-2xl font-semibold items-center justify-center flex pt-10 text-[#2b1c50]">
+                <div className="text-2xl font-semibold items-center text-center justify-center flex pt-10 text-[#2b1c50]">
                 Customized Learning Paths
 
                 </div>
