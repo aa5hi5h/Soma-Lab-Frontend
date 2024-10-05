@@ -10,7 +10,7 @@ const FourthSection = () => {
     return (
         <div className="md:pt-10 max-w-5xl mx-auto pb-32 px-10">
         <div
-  className="text-[#111019] md:text-center flex flex-col justify-center items-center md:text-8xl text-4xl gap-4 font-bold tracking-tighter pb-10 md:pb-20">
+  className="text-[#111019] md:text-center flex flex-col justify-center items-center md:text-8xl text-5xl gap-4 font-bold tracking-tighter pb-10 md:pb-20">
   <div>
   Mimic <span className="text-blue-500">real</span> patient
   </div>
@@ -29,16 +29,16 @@ Interact with patients experiencing different emotional states, such as anxiety,
 
                     </div>
 
-                    <div className="p-10 md:p-0 md:pt-10 transform rotate-[-2deg]">
+                    <div className=" p-10  md:p-0 md:pt-10 transform rotate-[-2deg]">
       <div className="border-2 rounded-md border-dashed border-[#2b1c50] p-4 inline-block">
         <Image src={HeroImage1} alt="Image" className="rounded-md" />
       </div>
     </div>
         </div>
     </div>
-    <div className="py-20 px-10">
+    <div className="py-20 px-0 md:px-10">
     <div className="md:flex items-center justify-between md:space-x-10 space-y-10 md:space-y-0">
-            <div className="bg-[#e8f5e3] rounded-[40px] md:w-1/2 p-10 hover:scale-105 hover:shadow-xl">
+            <div className="bg-[#e8f5e3] rounded-[40px] md:w-1/2 p-10 hover:scale-105 w-full hover:shadow-xl">
                 <Image
                 src={HeroImage2}
                 alt="image"
@@ -51,7 +51,7 @@ Interact with patients experiencing different emotional states, such as anxiety,
                 />
 
                 <div className="text-2xl items-center justify-center flex pt-10 text-[#224229] font-semibold ">
-                Physical Procedures
+                Physical Procedures         
 
                 </div>
                 <div className="font-normal text-center pt-4">
@@ -84,7 +84,7 @@ Learn to perform targeted physical exams based on patient symptoms, such as card
 <div className="md:flex items-center pt-20  justify-between md:space-x-10 space-y-10 md:space-y-0">
 <div className="bg-[#e3f3ff]  rounded-[40px] md:w-2/5 md:h-[520px] p-10 hover:scale-105 hover:shadow-xl">
 
-                <div className="text-3xl font-semibold tracking-tight items-center justify-center flex pt-4 text-[#1b224b]">
+                <div className="text-3xl font-semibold tracking-tight text-center items-center justify-center flex pt-4 text-[#1b224b]">
                 Interact with Hospital Providers
 
                 </div>

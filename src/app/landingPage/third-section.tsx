@@ -7,7 +7,7 @@ import MedicalPng4 from "../../../public/MEdicine Bin.svg"
 const ThirdSection = () => {
 
     return (
-        <div className="md:pt-10 max-w-5xl mx-auto pb-32 px-10">
+        <div className="md:pt-10 mt-[-8rem]  max-w-5xl mx-auto pb-32 px-10">
         <div className="
       text-[#111019]
       text-center
@@ -15,7 +15,7 @@ const ThirdSection = () => {
       flex-col
       justify-center
       items-center
-      text-4xl
+      text-5xl
       md:text-7xl
       font-bold
       tracking-tighter

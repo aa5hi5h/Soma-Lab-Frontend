@@ -18,7 +18,7 @@ const Navbar = () => {
 
                 <div className="flex lg:space-x-4 items-center">
                     <Button onClick={() => router.push("/contact")} className="bg-[#565add] hover:bg-[#565add]/75">Book a Demo</Button>
-                    <Button onClick={() => router.push("https://github.com/aa5hi5h/Soma-Lab-Frontend")} className="flex space-x-2" variant={"ghost"}>
+                    <Button onClick={() => router.push("https://github.com/aa5hi5h/Soma-Lab-Frontend")} className="space-x-2 hidden md:flex" variant={"ghost"}>
                         <span>Repo</span><Github /></Button>
                 </div>
             </div>
